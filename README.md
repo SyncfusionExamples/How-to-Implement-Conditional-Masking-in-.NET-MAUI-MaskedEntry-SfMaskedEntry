@@ -33,7 +33,7 @@ Consider an input field where the mask pattern changes based on the selected doc
         <Picker x:Name="phoneTypePicker" SelectedIndexChanged="OnPhoneTypeChanged">
             <Picker.Items>
                 <x:String>US Number</x:String>
-                <x:String>International Number</x:String>
+                <x:String>India Number</x:String>
             </Picker.Items>
         </Picker>
         <editors:SfMaskedEntry x:Name="maskedEntry"

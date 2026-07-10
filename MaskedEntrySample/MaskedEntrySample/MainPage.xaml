@@ -9,14 +9,16 @@
         <Picker x:Name="phoneTypePicker" SelectedIndexChanged="OnPhoneTypeChanged">
             <Picker.Items>
                 <x:String>US Number</x:String>
-                <x:String>International Number</x:String>
+                <x:String>India Number</x:String>
             </Picker.Items>
         </Picker>
+
 
         <editors:SfMaskedEntry x:Name="maskedEntry"
                        WidthRequest="250"
                        MaskType="Simple"
                        Placeholder="Enter phone number" />
+
 
     </VerticalStackLayout>
 </ContentPage>

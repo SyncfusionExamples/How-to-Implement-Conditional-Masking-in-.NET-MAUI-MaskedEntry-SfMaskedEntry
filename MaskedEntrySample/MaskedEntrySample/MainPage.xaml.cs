@@ -8,15 +8,14 @@ public partial class MainPage : ContentPage
     }
     private void OnPhoneTypeChanged(object sender, EventArgs e)
     {
+        maskedEntry.Value = string.Empty;
         if (phoneTypePicker.SelectedIndex == 0)
         {
             maskedEntry.Mask = "(000) 000-0000";
-            maskedEntry.Value = "408 9876543";
         }
         else
         {
-            maskedEntry.Mask = "+00 000 000 0000";
-            maskedEntry.Value = "129876541234";
+            maskedEntry.Mask = "00000 00000";
         }
     }
 }
