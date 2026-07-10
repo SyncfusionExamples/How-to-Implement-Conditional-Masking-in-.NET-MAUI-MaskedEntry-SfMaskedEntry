@@ -30,16 +30,22 @@ Consider an input field where the mask pattern changes based on the selected doc
              x:Class="MaskedEntrySample.MainPage">
     
     <VerticalStackLayout WidthRequest="350" Padding="50" Spacing="40">
-        <Picker x:Name="phoneTypePicker" SelectedIndexChanged="OnPhoneTypeChanged">
+    
+        <Picker x:Name="countryPicker" SelectedIndexChanged="OnCountryChanged">
             <Picker.Items>
-                <x:String>US Number</x:String>
-                <x:String>India Number</x:String>
+                <x:String>United States</x:String>
+                <x:String>United Kingdom</x:String>
+                <x:String>Japan</x:String>
             </Picker.Items>
         </Picker>
+
         <editors:SfMaskedEntry x:Name="maskedEntry"
-                       WidthRequest="250"
-                       MaskType="Simple"
-                       Placeholder="Enter phone number" />
+                        WidthRequest="250"
+                        HidePromptOnLeave="True"
+                        ClearButtonVisibility="WhileEditing"
+                        MaskType="Simple"
+                        Placeholder="Enter date" />
     </VerticalStackLayout>
 </ContentPage>
+
 ```
